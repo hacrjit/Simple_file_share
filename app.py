@@ -43,6 +43,6 @@ def delete_file(file_id):
     db.fs.files.delete_one({'_id': ObjectId(file_id)})
     return redirect('/files')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
 
